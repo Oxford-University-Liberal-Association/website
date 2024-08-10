@@ -2226,6 +2226,15 @@ html.no-csstransitions .home-content__main {
 }
 
 /* NEW STUFF */
+.signoff {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.president-signoff {
+  margin-top: 0;
+  margin-bottom: 0.5rem; /* Adjust this as needed */
+  line-height: 1.2; /* This can help to reduce the overall height */
+}
 .footer-subscribe {
   text-align: center; /* Centres content within the footer-subscribe div */
 }
