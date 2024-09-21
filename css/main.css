@@ -2226,6 +2226,13 @@ html.no-csstransitions .home-content__main {
 }
 
 /* NEW STUFF */
+
+.calendar-container {
+  border: 5px solid #FAA61A;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .signoff {
   margin-bottom: 0;
   padding-bottom: 0;
