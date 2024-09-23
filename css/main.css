@@ -2227,10 +2227,79 @@ html.no-csstransitions .home-content__main {
 
 /* NEW STUFF */
 
+
+
+.upcoming-events{
+  margin: 0;
+  padding: 0;
+}
+
+.upcoming-events h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.upcoming-events.row {
+  margin: 0;
+}
+
+.pupcoming-events .col-md-8 {
+  padding: 0;
+}
+
 .calendar-container {
-  border: 5px solid #FAA61A;
+  border: 5px solid #FAA61A; /* Keep the coloured border */
   max-width: 1200px;
   margin: 0 auto;
+  line-height: 0; /* Remove extra space caused by line height */
+}
+.calendar-container iframe {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/* Subscribe Buttons Styles */
+.subscribe-buttons {
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.subscribe-buttons h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #FAA61A;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-calendar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-decoration: none;
+  border: 2px solid #FAA61A;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-calendar:hover {
+  background-color: #FAA61A;
+  color: #000000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .button-group {
+      flex-direction: column;
+      align-items: center;
+  }
 }
 
 .signoff {
