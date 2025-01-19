@@ -2386,6 +2386,64 @@ html.no-csstransitions .home-content__main {
   font-size: 1.5rem;
   font-family: "EB Garamond";
 }
+.btn-goblog {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(45deg, #FAA61A, #FFDD44);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-goblog::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 70%);
+  transition: transform 0.5s ease;
+  transform: scale(0);
+  z-index: 0;
+}
+
+.btn-goblog:hover {
+  background: linear-gradient(45deg, #FFDD44, #FAA61A);
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-goblog:hover::before {
+  transform: scale(1);
+  left: 0;
+  transition: transform 0.5s ease;
+}
+
+.btn-goblog:active {
+  background: linear-gradient(45deg, #FF8C00, #FFCC00);
+  color: #222;
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-goblog:active::before {
+  transform: scale(1.2);
+}
+
+
+
+
 body.oxford-page {
   background-image: url('/images/hero-bg.jpg');
   background-size: cover;
