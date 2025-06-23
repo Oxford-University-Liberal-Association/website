@@ -2765,6 +2765,410 @@ body.oxford-page {
     background-color: #f9f9f9;
 }
 
+
+}
+.badge-mt-term-2025 {
+    background-color: #FAA61A !important;
+    color: white;
+}
+
+/* Accordion Styling */
+.accordion {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    background-color: #000000;
+    border: 2px solid #FAA61A;
+    margin-bottom: 1rem;
+    border-radius: 0;
+}
+
+.accordion-button {
+    background-color: #000000 !important;
+    color: #FAA61A !important;
+    font-family: "EB Garamond", sans-serif !important;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    border: none !important;
+    padding: 1.5rem 2rem !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #FAA61A !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    border-color: #FAA61A !important;
+    box-shadow: 0 0 0 0.25rem rgba(250, 166, 26, 0.25) !important;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FAA61A'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+.accordion-collapse {
+    background-color: #000000;
+}
+
+.accordion-body {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    font-family: "EB Garamond", sans-serif !important;
+    padding: 2rem !important;
+    border-top: 1px solid #FAA61A;
+}
+
+/* Responsive accordion styling */
+@media (max-width: 768px) {
+    .accordion-button {
+        font-size: 1.6rem !important;
+        padding: 1rem 1.5rem !important;
+    }
+    
+    .accordion-body {
+        padding: 1.5rem !important;
+    }
+}
+/* Presidents Welcome Section Improvements */
+.presidents-welcome {
+    background: linear-gradient(135deg, rgba(0,0,0,0.95) 0%, rgba(17,17,17,0.98) 100%);
+    position: relative;
+}
+
+.presidents-welcome::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(250,166,26,0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.welcome-header {
+    position: relative;
+    z-index: 2;
+}
+
+.welcome-title {
+    font-size: 3.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.welcome-divider {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #FAA61A 0%, #FFDD44 100%);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.welcome-content {
+    position: relative;
+    z-index: 2;
+}
+
+.president-image-container {
+    position: relative;
+    display: inline-block;
+    max-width: 250px;
+    width: 100%;
+}
+
+.president-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(250,166,26,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.president-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(250,166,26,0.4);
+}
+
+.image-border {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid #FAA61A;
+    border-radius: 20px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.welcome-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #ffffff;
+}
+
+.welcome-intro {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #FAA61A;
+    margin-bottom: 1.5rem;
+}
+
+.president-signature {
+    background: rgba(250,166,26,0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #FAA61A;
+}
+
+.signoff {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.president-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+}
+
+.president-title {
+    font-size: 1rem;
+    color: white;
+}
+
+.term-badges .badge {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 767.98px) {
+    .welcome-title {
+        font-size: 2.5rem;
+    }
+    
+    .president-image-container {
+        max-width: 200px;
+    }
+    
+    .welcome-text {
+        text-align: center;
+    }
+    
+    .president-signature {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .term-badges {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    
+    .term-badges .badge {
+        display: inline-block;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .welcome-title {
+        font-size: 2rem;
+    }
+    
+    .presidents-welcome {
+        padding: 3rem 0;
+    }
+    
+    .welcome-text p {
+        font-size: 1rem;
+    }
+    
+    .president-image-container {
+        max-width: 180px;
+    }
+}
+
+/* Quick Navigation Panel */
+.quick-nav-panel {
+    background: linear-gradient(135deg, rgba(0,0,0,0.95) 0%, rgba(17,17,17,0.98) 100%);
+    position: relative;
+    border-top: 3px solid #FAA61A;
+    border-bottom: 3px solid #FAA61A;
+}
+
+.quick-nav-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(250,166,26,0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.quick-nav-header {
+    position: relative;
+    z-index: 2;
+}
+
+.quick-nav-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.quick-nav-divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #FAA61A 0%, #FFDD44 100%);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.quick-nav-grid {
+    position: relative;
+    z-index: 2;
+}
+
+.quick-nav-item {
+    background: rgba(250,166,26,0.1);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.quick-nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(250,166,26,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.quick-nav-item:hover {
+    background: rgba(250,166,26,0.2);
+    border-color: #FAA61A;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(250,166,26,0.3);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.quick-nav-item:hover::before {
+    left: 100%;
+}
+
+.quick-nav-icon {
+    font-size: 5rem;
+    color: #FAA61A;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.quick-nav-item:hover .quick-nav-icon {
+    color: #FFDD44;
+    transform: scale(1.1);
+}
+
+.quick-nav-item-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #FAA61A;
+    margin-bottom: 0.5rem;
+    font-family: "EB Garamond", sans-serif;
+}
+
+.quick-nav-item:hover .quick-nav-item-title {
+    color: #FFDD44;
+}
+
+.quick-nav-item-desc {
+    font-size: 1.5rem;
+    color: #cccccc;
+    line-height: 1.4;
+    font-family: "EB Garamond", sans-serif;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 767.98px) {
+    .quick-nav-title {
+        font-size: 2rem;
+    }
+    
+    .quick-nav-item {
+        padding: 1.5rem 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .quick-nav-icon {
+        font-size: 2.5rem;
+    }
+    
+    .quick-nav-item-title {
+        font-size: 1.2rem;
+    }
+    
+    .quick-nav-item-desc {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .quick-nav-panel {
+        padding: 2rem 0;
+    }
+    
+    .quick-nav-title {
+        font-size: 1.8rem;
+    }
+    
+    .quick-nav-item {
+        padding: 1.25rem 0.75rem;
+    }
+}
+
+.president-college {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    font-style: italic;
 }
 
 /*# sourceMappingURL=main.css.map */
