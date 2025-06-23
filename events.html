@@ -44,38 +44,38 @@
 
     <nav class="navbar navbar-expand-sm ld-bg navbar-dark sticky-top">
         <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"> <img src="images/logo-banner.svg" alt="Homepage" style="width: 480px; height: 270px;"></a>
+        <a class='navbar-brand' href='index.html'> <img src="images/logo-banner.svg" alt="Homepage" style="width: 480px; height: 270px;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
             <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="navbar-nav nav-link" href="about.html" style="color: #FAA61A;">About</a>
+                <a class='navbar-nav nav-link' href='about.html' style='color: #FAA61A;'>About</a>
             </li>
             <li class="nav-item">
-                <a class="navbar-nav nav-link" href="committee.html" style="color: #FAA61A;">Committee</a>
+                <a class='navbar-nav nav-link' href='committee.html' style='color: #FAA61A;'>Committee</a>
             </li>
             <li class="nav-item"></li>
-                <a class="navbar-nav nav-link" href="events.html" style="color: #FAA61A;">Events</a>
+                <a class='navbar-nav nav-link' href='events.html' style='color: #FAA61A;'>Events</a>
                 </li>
             <li class="nav-item">
-                <a class="navbar-nav nav-link" href="documents.html" style="color: #FAA61A;">Documents</a>
+                <a class='navbar-nav nav-link' href='documents.html' style='color: #FAA61A;'>Documents</a>
             </li>
             <li class="nav-item">
-              <a class="navbar-nav nav-link" href="blogs.html" style="color: #FAA61A;">Blog</a>
+              <a class='navbar-nav nav-link' href='blogs.html' style='color: #FAA61A;'>Blog</a>
           </li>
             <li class="nav-item">
-                <a class="navbar-nav nav-link" href="donate.html" style="color: #FAA61A;">Donate</a>
+                <a class='navbar-nav nav-link' href='donate.html' style='color: #FAA61A;'>Donate</a>
             </li>
             <li class="nav-item">
-                <a class="navbar-nav nav-link" href="alumni.html" style="color: #FAA61A;">Alumni</a>
+                <a class='navbar-nav nav-link' href='alumni.html' style='color: #FAA61A;'>Alumni</a>
             </li>
             <li class="nav-item">
-                <a class="navbar-nav nav-link" href="contact.html" style="color: #FAA61A;">Contact</a>
+                <a class='navbar-nav nav-link' href='contact.html' style='color: #FAA61A;'>Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link join-us" href="join.html" style="color: #FAA61A;">JOIN</a>
+                <a class='nav-link join-us' href='join.html' style='color: #FAA61A;'>JOIN</a>
             </li>
             </ul>
         </div>
@@ -83,14 +83,15 @@
     </nav>
 </head>
 <body>
-
-    <!-- home
+    <!-- Main Content
     ================================================== -->
-    <section class="upcoming-events container my-0">
+    <main>
+        <!-- Upcoming Events Section -->
+<section class="upcoming-events container my-0">
       <div class="row">
           <div class="col-md-8 mx-auto p-0">
               <main>
-                  <h1>Our Upcoming Events</h1>
+                  <h2 class="welcome-title">Our Upcoming Events</h2>
                   <div class="calendar-container">
                       <iframe
                           src="https://calendar.google.com/calendar/embed?src=2f847e8a87ceb528f4a11459d43ffb1d3b2623e29f0d44236da355d85b756984%40group.calendar.google.com&ctz=Europe%2FLondon"
@@ -100,34 +101,125 @@
                           allowfullscreen>
                       </iframe>
                   </div>
-                  <!-- Subscribe Buttons -->
-                  <div class="subscribe-buttons">
-                    <h2>Subscribe to OSLA Events [See our events in your calendar]</h2>
-                    <div class="button-group">
-                        <a href="https://calendar.google.com/calendar/r?cid=2f847e8a87ceb528f4a11459d43ffb1d3b2623e29f0d44236da355d85b756984@group.calendar.google.com" class="btn-calendar btn-google" target="_blank" rel="noopener">
-                            Add to Google Calendar
-                        </a>
-                        <a href="https://calendar.google.com/calendar/ical/2f847e8a87ceb528f4a11459d43ffb1d3b2623e29f0d44236da355d85b756984%40group.calendar.google.com/public/basic.ics" class="btn-calendar btn-apple">
-                            Add to Apple Calendar
-                        </a>
-                        <a href="https://calendar.google.com/calendar/ical/2f847e8a87ceb528f4a11459d43ffb1d3b2623e29f0d44236da355d85b756984%40group.calendar.google.com/public/basic.ics" class="btn-calendar btn-ical">
-                            Download iCal File
-                        </a>
-                    </div>
-                    
-                  </div>
-                  <h2>Looking for Outlook?</h2>
-                  <p>Unfortunately due to recent changes by Microsoft to Outlook, it is no longer possible to subscribe to our calendar in (mobile) Outlook.
-                    Whilst we appreciate many University of Oxford students use this calendar academically, we recommend using either a personal Apple or Google calendar if you wish to subscribe to our Events.
-                    Finally, please note that our events are always accessible on this page and in your Term Card.</p>
 
-                  <h2>Calendar and Events Accessibility</h2>
+                  <h2>Events Accessibility</h2>
+                  <p>If you require any assistance or have specific accessibility needs, please do not hesitate to reach out to our dedicated Committee member.</p>
                   <a href="mailto:accessandwelfare@oxuniliberals.com" class="btn-email">Email: The Access, Welfare Officer</a>
               </main>
               
           </div>
       </div>
   </section>
+
+        <!-- Past Events Gallery Section -->
+        <section class="past-events-gallery py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <div class="text-center mb-5">
+                            <h2 class="welcome-title">Recent Events at OSLA</h2>
+                            <div class="welcome-divider mx-auto mb-4"></div>
+                            <p>Whilst we are most well known for our regular flagship 'Liquor and Liberalism' socials, we also regularly organise a variety of other events and trips for our members to attend. Below are some of our recent highlights:</p>
+                        </div>
+                        
+                        <!-- Photo Gallery Grid -->
+                        <div class="photo-gallery">
+                            <div class="row g-3 justify-content-center">
+                                <!-- First row: 3 equal items -->
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="gallery-item">
+                                        <img src="images/events/annual-dinner-2025.jpeg" alt="OSLA Event" class="gallery-image">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-info">
+                                                <h4>Annual Dinner 2025 with Josh Babarinde MP at St Hilda's College, Oxford</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="gallery-item">
+                                        <img src="images/events/gladstone_debate_more_people.jpeg" alt="OSLA Event" class="gallery-image">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-info">
+                                                <h4>Gladstone Memorial Debate at the Oxford Union</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="gallery-item">
+                                        <img src="images/events/nlc-debate.jpg" alt="OSLA Event" class="gallery-image">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-info">
+                                                <h4>Debate at the National Liberal Club, London</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Second row: 2 wider items -->
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="gallery-item">
+                                        <img src="images/events/varsity-trip-debate.jpeg" alt="OSLA Event" class="gallery-image">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-info">
+                                                <h4>Varsity Trip, Cambridge</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="gallery-item">
+                                        <img src="images/events/welsh-senedd-2.jpeg" alt="OSLA Event" class="gallery-image">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-info">
+                                                <h4>Welsh Senedd Trip, Wales</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Third row: 3 equal items -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="gallery-item">
+                                        <img src="images/events/lords-trip.jpeg" alt="OSLA Event" class="gallery-image">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-info">
+                                                <h4>House of Lords Trip, London</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Third row: 3 equal items -->
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="gallery-item">
+                                        <img src="images/events/lords-trip-2.jpeg" alt="OSLA Event" class="gallery-image">
+                                        <div class="gallery-overlay">
+                                            <div class="gallery-info">
+                                                <h4>House of Lords Trip, London</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <!-- View More Button -->
+                        <div class="text-center mt-5">
+                            <a href="https://www.instagram.com/oxuniliberals/" class="btn-goblog">
+                                View more on our Instagram page
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <hr class="container my-5">
     <!-- preloader
@@ -161,16 +253,16 @@
       <div class="footer-links">
         <h3>OSLA Quick Links</h3>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li><a href="documents.html">Documents</a></li>
-          <li><a href="blogs.html">Blog</a></li>
-          <li><a href="committee.html">Committee</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="alumni.html">Alumni</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="donate.html">Donate</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href='index.html'>Home</a></li>
+          <li><a href='join.html'>Join</a></li>
+          <li><a href='documents'>Documents</a></li>
+          <li><a href='blogs.html'>Blog</a></li>
+          <li><a href='committee.html'>Committee</a></li>
+          <li><a href='events.html'>Events</a></li>
+          <li><a href='alumni.html'>Alumni</a></li>
+          <li><a href='about.html'>About</a></li>
+          <li><a href='donate.html'>Donate</a></li>
+          <li><a href='contact.html'>Contact</a></li>
         </ul>
       </div>
       <div class="footer-social">
@@ -182,7 +274,7 @@
         </ul>
       </div>
       <div class="footer-subscribe">
-        <h3><a href="mailing-list.html">Click here to join OSLA's Mailing List</a></h3>
+        <h3><a href='/mailing-list'>Click here to join OSLA's Mailing List</a></h3>
                 
       </div>
     </div>
