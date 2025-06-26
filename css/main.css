@@ -2899,13 +2899,13 @@ body.oxford-page {
 }
 
 .welcome-text {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     line-height: 1.7;
     color: #ffffff;
 }
 
 .welcome-intro {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-weight: 600;
     color: #FAA61A;
     margin-bottom: 1.5rem;
@@ -2920,22 +2920,22 @@ body.oxford-page {
 
 .signoff {
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: white;
 }
 
 .president-name {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-weight: 600;
     color: white;
 }
 
 .president-title {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: white;
 }
 .president-college {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: white;
     font-style: italic;
@@ -2957,46 +2957,46 @@ body.oxford-page {
     }
     
     .welcome-text p {
-        font-size: 1.1rem; /* Changed from 4rem to 1.1rem */
+        font-size: 1.7rem;
     }
     
     .welcome-intro {
-        font-size: 1.3rem; /* Add specific styling for intro */
+        font-size: 1.7rem;
     }
     
     .president-image-container {
-        max-width: 120px; /* Slightly larger than 100px */
+        max-width: 120px;
     }
     
     .president-college {
-        font-size: 1.2rem; /* Changed from 2rem to 1.2rem */
+        font-size: 1.7rem;
     }
     
     .president-name {
-        font-size: 1.4rem; /* Add responsive sizing */
+        font-size: 1.7rem;
     }
     
     .president-title {
-        font-size: 1.1rem; /* Add responsive sizing */
+        font-size: 1.7rem;
     }
     
     .signoff {
-        font-size: 1.1rem; /* Add responsive sizing */
+        font-size: 1.7rem;
     }
 }
 
-/* Add an additional breakpoint for very small screens */
+/* Add for very small screens */
 @media (max-width: 400px) {
     .welcome-title {
         font-size: 1.8rem;
     }
     
     .welcome-text p {
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
     
     .welcome-intro {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
     
     .president-image-container {
@@ -3004,19 +3004,19 @@ body.oxford-page {
     }
     
     .president-name {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
     }
     
     .president-title {
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
     
     .president-college {
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
     
     .signoff {
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
 }
 
