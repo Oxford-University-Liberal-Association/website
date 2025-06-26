@@ -2988,7 +2988,7 @@ body.oxford-page {
 /* Add for very small screens */
 @media (max-width: 400px) {
     .welcome-title {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
     
     .welcome-text p {
@@ -3132,8 +3132,8 @@ body.oxford-page {
 }
 
 .quick-nav-item-desc {
-    font-size: 1.5rem;
-    color: #cccccc;
+    font-size: 1.7rem;
+    color: white;
     line-height: 1.4;
     font-family: "EB Garamond", sans-serif;
 }
@@ -3150,15 +3150,15 @@ body.oxford-page {
     }
     
     .quick-nav-icon {
-        font-size: 2.5rem;
+        font-size: 5rem;
     }
     
     .quick-nav-item-title {
-        font-size: 1.2rem;
+        font-size: 1.9rem;
     }
     
     .quick-nav-item-desc {
-        font-size: 0.9rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -3166,9 +3166,12 @@ body.oxford-page {
     .quick-nav-panel {
         padding: 2rem 0;
     }
+    .quick-nav-icon {
+        font-size: 2.5rem;
+    }
     
     .quick-nav-title {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
     
     .quick-nav-item {
