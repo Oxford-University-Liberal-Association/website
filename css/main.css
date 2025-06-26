@@ -2898,31 +2898,14 @@ body.oxford-page {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.president-image:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 40px rgba(250,166,26,0.4);
-}
-
-.image-border {
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border: 2px solid #FAA61A;
-    border-radius: 20px;
-    opacity: 0.5;
-    z-index: -1;
-}
-
 .welcome-text {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     line-height: 1.7;
     color: #ffffff;
 }
 
 .welcome-intro {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: #FAA61A;
     margin-bottom: 1.5rem;
@@ -2937,57 +2920,31 @@ body.oxford-page {
 
 .signoff {
     font-style: italic;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: white;
 }
 
 .president-name {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: white;
 }
 
 .president-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
+}
+.president-college {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    font-style: italic;
 }
 
 .term-badges .badge {
     font-size: 0.9rem;
     padding: 0.5rem 1rem;
     border-radius: 20px;
-}
-
-/* Mobile Optimizations */
-@media (max-width: 767.98px) {
-    .welcome-title {
-        font-size: 2.5rem;
-    }
-    
-    .president-image-container {
-        max-width: 200px;
-    }
-    
-    .welcome-text {
-        text-align: center;
-    }
-    
-    .president-signature {
-        text-align: center;
-        margin-top: 2rem;
-    }
-    
-    .term-badges {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: center;
-    }
-    
-    .term-badges .badge {
-        display: inline-block;
-        width: fit-content;
-    }
 }
 
 @media (max-width: 575.98px) {
@@ -3000,11 +2957,66 @@ body.oxford-page {
     }
     
     .welcome-text p {
-        font-size: 1rem;
+        font-size: 1.1rem; /* Changed from 4rem to 1.1rem */
+    }
+    
+    .welcome-intro {
+        font-size: 1.3rem; /* Add specific styling for intro */
     }
     
     .president-image-container {
-        max-width: 180px;
+        max-width: 120px; /* Slightly larger than 100px */
+    }
+    
+    .president-college {
+        font-size: 1.2rem; /* Changed from 2rem to 1.2rem */
+    }
+    
+    .president-name {
+        font-size: 1.4rem; /* Add responsive sizing */
+    }
+    
+    .president-title {
+        font-size: 1.1rem; /* Add responsive sizing */
+    }
+    
+    .signoff {
+        font-size: 1.1rem; /* Add responsive sizing */
+    }
+}
+
+/* Add an additional breakpoint for very small screens */
+@media (max-width: 400px) {
+    .welcome-title {
+        font-size: 1.8rem;
+    }
+    
+    .welcome-text p {
+        font-size: 1rem;
+    }
+    
+    .welcome-intro {
+        font-size: 1.2rem;
+    }
+    
+    .president-image-container {
+        max-width: 100px;
+    }
+    
+    .president-name {
+        font-size: 1.3rem;
+    }
+    
+    .president-title {
+        font-size: 1rem;
+    }
+    
+    .president-college {
+        font-size: 1rem;
+    }
+    
+    .signoff {
+        font-size: 1rem;
     }
 }
 
@@ -3162,13 +3174,6 @@ body.oxford-page {
     .quick-nav-item {
         padding: 1.25rem 0.75rem;
     }
-}
-
-.president-college {
-    font-size: 1rem;
-    font-weight: 600;
-    color: white;
-    font-style: italic;
 }
 
 .gallery-info h4 {
