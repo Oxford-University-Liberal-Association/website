@@ -3526,5 +3526,247 @@ body.oxford-page {
   }
 }
 
+/* About Cards Grid */
+.about-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.about-card {
+    background: rgba(250,166,26,0.1);
+    border: 2px solid #FAA61A;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(250,166,26,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(250,166,26,0.3);
+    border-color: #FFDD44;
+}
+
+.about-card:hover::before {
+    left: 100%;
+}
+
+.about-icon {
+    font-size: 4rem;
+    color: #FAA61A;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.about-card:hover .about-icon {
+    color: #FFDD44;
+    transform: scale(1.1);
+}
+
+.about-card h3 {
+    color: #FAA61A;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: "EB Garamond", sans-serif;
+}
+
+.about-card:hover h3 {
+    color: #FFDD44;
+}
+
+/* Enhanced Timeline */
+.timeline-enhanced {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline-enhanced::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: linear-gradient(to bottom, #FAA61A, #FFDD44);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: 2rem 0;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item.left {
+    left: 0;
+    padding-right: 3rem;
+}
+
+.timeline-item.right {
+    left: 50%;
+    padding-left: 3rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #FAA61A, #FFDD44);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #000;
+    font-size: 1rem;
+    z-index: 2;
+}
+.timeline-year {
+    font-family: "EB Garamond", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.1;
+    text-align: center;
+    color: #000;
+}
+
+.timeline-item.left .timeline-marker {
+    right: -40px;
+}
+
+.timeline-item.right .timeline-marker {
+    left: -40px;
+}
+
+.timeline-card {
+    background: rgba(250,166,26,0.1);
+    border: 2px solid #FAA61A;
+    border-radius: 15px;
+    padding: 2rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(250,166,26,0.3);
+    border-color: #FFDD44;
+}
+
+.timeline-card h3 {
+    color: #FAA61A;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.timeline-icon {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: #FAA61A;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+/* Socials Section Enhancement */
+.socials-section {
+    background: rgba(0,0,0,0.8);
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    margin: 3rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.socials-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(250,166,26,0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.socials-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-highlight {
+    background: rgba(250,166,26,0.15);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #FAA61A;
+    text-align: center;
+}
+
+.social-highlight i {
+    font-size: 3rem;
+    color: #FAA61A;
+    margin-bottom: 1rem;
+}
+
+.social-highlight h4 {
+    color: #FAA61A !important;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .timeline-enhanced::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 4rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    .timeline-marker {
+        left: -20px !important;
+        right: auto !important;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .about-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-year {
+        font-size: 0.75rem;
+    }
+}
+
 
 /*# sourceMappingURL=main.css.map */
