@@ -4243,6 +4243,137 @@ body.oxford-page {
     margin: 0.25rem;
   }
 }
+.accessibility-panel {
+  margin: 3rem 0;
+}
+
+.accessibility-container {
+  background: linear-gradient(135deg, rgba(250,166,26,0.15) 0%, rgba(250,166,26,0.25) 100%);
+  border: 3px solid #FAA61A;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.accessibility-icon {
+  font-size: 2.8rem;
+  color: #FAA61A;
+}
+
+.accessibility-title {
+  font-size: 2.8rem;
+  color: #FAA61A;
+  font-weight: 600;
+  font-family: "EB Garamond", sans-serif;
+}
+
+.accessibility-text {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.btn-accessibility {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #FAA61A;
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-family: "EB Garamond", sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-accessibility:hover, 
+.btn-accessibility:focus {
+  background-color: #ffffff;
+  color: #000000;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(250,166,26,0.4);
+}
+
+/* High contrast focus outline for better accessibility */
+.btn-accessibility:focus {
+  outline: 3px solid white;
+  outline-offset: 2px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 767px) {
+  .accessibility-icon {
+    font-size: 2.4rem;
+  }
+  
+  .accessibility-title {
+    font-size: 2.4rem;
+  }
+  
+  .accessibility-text {
+    font-size: 1.6rem;
+  }
+  
+  .btn-accessibility {
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+  }
+}
+
+/* Events Notice Banner Styling */
+.events-notice-banner {
+  margin: 2rem 0;
+}
+
+.notice-container {
+  background-color: black;
+  border: 1px solid red;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.notice-icon {
+  font-size: 2rem;
+  color: #ffc107;
+}
+
+.notice-title {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 600;
+  font-family: "EB Garamond", sans-serif;
+}
+
+.notice-text {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 767px) {
+  .notice-icon {
+    font-size: 1.8rem;
+  }
+  
+  .notice-title {
+    font-size: 1.8rem;
+  }
+  
+  .notice-text {
+    font-size: 1.4rem;
+  }
+  
+  .notice-container {
+    padding: 1rem !important;
+  }
+}
 
 
 
