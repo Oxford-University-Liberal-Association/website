@@ -2863,7 +2863,10 @@ body.oxford-page {
 }
 /* Presidents Welcome Section Improvements */
 .presidents-welcome {
-    background: linear-gradient(135deg, rgba(0,0,0,0.95) 0%, rgba(17,17,17,0.98) 100%);
+    background: linear-gradient(135deg, rgba(0,0,0,0.92) 0%, rgba(17,17,17,0.65) 100%), 
+                url('../images/ox-bg.jpg');
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 
@@ -2928,7 +2931,7 @@ body.oxford-page {
 }
 
 .welcome-intro {
-    font-size: 1.9rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #FAA61A;
     margin-bottom: 1.5rem;
@@ -2943,7 +2946,7 @@ body.oxford-page {
 
 .signoff {
     font-style: italic;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color: white;
 }
 
