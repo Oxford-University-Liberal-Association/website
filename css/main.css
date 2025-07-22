@@ -4469,6 +4469,66 @@ body.oxford-page {
     pointer-events: none;
 }
 
+/* Alumni Historical Association Names Section Improvements */
+.alumni-historicalnames-section {
+    background: linear-gradient(135deg, rgba(0,0,0,0.92) 0%, rgba(17,17,17,0.65) 100%), 
+                url('../images/oxford-pan-out-image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.alumni-historicalnames-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(250,166,26,0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Alumni Reachout Section Improvements */
+.alumni-reachout-section {
+    background: linear-gradient(135deg, rgba(0,0,0,0.92) 0%, rgba(17,17,17,0.65) 100%), 
+                url('../images/oxford-highstreet-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.alumni-reachout-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(250,166,26,0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Alumni Notables Section Improvements */
+.alumni-notables-section {
+    background: linear-gradient(135deg, rgba(0,0,0,0.92) 0%, rgba(17,17,17,0.65) 100%), 
+                url('../images/harold_wilson_image.avif');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.alumni-notables-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(250,166,26,0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
 
 
 
