@@ -4529,6 +4529,179 @@ body.oxford-page {
     pointer-events: none;
 }
 
+/* JOIN PAGE MODERN LAYOUT */
+.join-body {
+  --osla-gold:#FAA61A;
+  background:#0c0c0c;
+  color:#222;
+  font-family:"EB Garamond", serif;
+}
+.join-hero {
+  position:relative;
+  min-height:68vh;
+  display:flex;
+  align-items:center;
+  background:
+    linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.75)),
+    url('../images/events/annual-dinner-2025.jpeg') center/cover no-repeat;
+  color:#fff;
+  padding:4rem 0 3rem;
+}
+.join-hero-overlay {position:absolute;inset:0;backdrop-filter:saturate(150%) blur(3px);}
+.text-gradient {
+  background:linear-gradient(95deg,#fff,var(--osla-gold));
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.btn-join-cta, .btn-join-solid {
+  font-weight:600;
+  border-radius:40px;
+  padding:.85rem 1.6rem;
+  letter-spacing:.5px;
+}
+.btn-join-solid {background:var(--osla-gold); border:none;}
+.btn-join-solid:hover,.btn-join-cta:hover {filter:brightness(.9);}
+.btn-ghost {backdrop-filter:blur(6px); border:1px solid rgba(255,255,255,.4); color:#fff;}
+.btn-ghost:hover {background:rgba(255,255,255,.15);}
+.mini-badge-stack {display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;}
+.mini-badge {
+  font-size:.75rem;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  background:rgba(255,255,255,.12);
+  padding:.45rem .7rem;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.3);
+  color:#fff;
+}
+.scroll-pulse {
+  position:absolute;left:50%;bottom:1.75rem;transform:translateX(-50%);
+  width:34px;height:34px;border:2px solid rgba(255,255,255,.6);border-radius:50%;
+  animation:scrollPulse 2.6s infinite;
+}
+.scroll-pulse::before {
+  content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:6px;height:6px;background:#fff;border-radius:50%;animation:scrollDot 1.6s infinite;
+}
+@keyframes scrollPulse {0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes scrollDot {0%{transform:translate(-50%,-50%) scale(.7)}50%{transform:translate(-50%,-50%) scale(1.2)}100%{transform:translate(-50%,-50%) scale(.7)}}
+
+.banner-slim {
+  background:var(--osla-gold);
+  color:#111;
+  text-align:center;
+  font-weight:600;
+  padding:.55rem .75rem;
+  font-size:.95rem;
+}
+
+.section-pad {padding:4.5rem 0 4rem;}
+.section-pad.alt-surface {background:#faf9f7;}
+.section-head {margin-bottom:2.4rem;}
+.section-title {font-weight:700;font-size:2.15rem;}
+.section-sub {color:#555;margin-top:.35rem;font-size:1.05rem;}
+
+.join-steps {display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));position:relative;}
+.join-step {
+  background:#fff;
+  border:1px solid #ece9e4;
+  border-radius:18px;
+  padding:1.3rem 1.1rem 1.25rem;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:.4rem;
+  box-shadow:0 4px 10px -4px rgba(0,0,0,.08);
+  transition:.35s;
+}
+.join-step:hover {transform:translateY(-4px);box-shadow:0 10px 22px -8px rgba(0,0,0,.15);}
+.step-number {
+  --sz:40px;
+  width:var(--sz);height:var(--sz);
+  line-height:40px;text-align:center;
+  font-weight:600;
+  background:var(--osla-gold);
+  color:#222;
+  border-radius:12px;
+  font-size:1rem;
+  box-shadow:0 4px 10px -2px rgba(0,0,0,.25);
+}
+.join-step h3 {font-size:1.05rem;font-weight:600;margin:0;}
+.join-step p {font-size:.87rem;line-height:1.3;margin:0;}
+.step-link {font-size:.78rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#000;text-decoration:none;}
+.step-link:hover {text-decoration:underline;}
+
+.benefit-grid .benefit-card {
+  background:#fff;
+  border:1px solid #ebe6df;
+  border-radius:22px;
+  padding:1.5rem 1.2rem 1.4rem;
+  height:100%;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:.55rem;
+  transition:.35s;
+  overflow:hidden;
+}
+.benefit-card::before {
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(140deg,rgba(250,166,26,.12),transparent 55%);
+  opacity:0;transition:.45s;
+}
+.benefit-card:hover {transform:translateY(-6px);box-shadow:0 14px 30px -12px rgba(0,0,0,.18);}
+.benefit-card:hover::before {opacity:1;}
+.benefit-icon {font-size:1.8rem;}
+.benefit-card h3 {font-size:1.05rem;font-weight:600;margin:0;}
+.benefit-card p {font-size:.85rem;margin:0;color:#444;}
+
+.panel {
+  border-radius:24px;
+  padding:1.9rem 1.5rem 1.7rem;
+  position:relative;
+  overflow:hidden;
+  border:1px solid #e9e3db;
+  background:#fff;
+  box-shadow:0 6px 18px -8px rgba(0,0,0,.12);
+}
+.panel.accent {
+  background:linear-gradient(150deg,#fff, #fff7ec 70%);
+  border-color:#f3dcc0;
+}
+.panel.glass {
+  background:rgba(255,255,255,.7);
+  backdrop-filter:blur(10px);
+}
+.panel-title {font-size:1.15rem;font-weight:600;margin-bottom:.65rem;}
+.mini-list {list-style:none;padding:0;margin:0;}
+.mini-list li {font-size:.85rem; padding-left:1.1rem; position:relative; margin-bottom:.4rem;}
+.mini-list li::before {
+  content:"";width:7px;height:7px;position:absolute;left:0;top:.42rem;
+  background:var(--osla-gold);border-radius:2px;
+}
+
+.accordion-button {font-weight:600;}
+.accordion-button:not(.collapsed){background:#fff7ec;color:#111;}
+
+.alt-surface .section-title {color:#111;}
+
+.footer-quicklinks-blob a {font-size:.8rem;}
+
+@media (max-width: 991.98px){
+  .join-hero {min-height:62vh;padding:3.5rem 0 2.5rem;}
+  .section-title {font-size:1.9rem;}
+}
+@media (max-width: 575.98px){
+  .join-hero {min-height:58vh;padding:3rem 0 2rem;}
+  .join-step {padding:1.1rem .95rem;}
+  .benefit-card {padding:1.25rem 1rem;}
+  .section-pad {padding:3.5rem 0 3.2rem;}
+}
+
+/* subtle focus */
+.join-step:focus-within,
+.benefit-card:focus-within {outline:2px solid var(--osla-gold);outline-offset:3px;}
+
 
 
 
