@@ -4705,4 +4705,37 @@ body.oxford-page {
 
 
 
+/* -------------------------------------------------------------------
+ * Membership Noticeboard (join.html)
+ * ------------------------------------------------------------------- */
+.noticeboard-wrapper { position: relative; margin-top: 4rem; margin-bottom: 6rem; }
+.noticeboard-board {
+  position: relative;
+  background: rgba(0,0,0,0.6);
+  border: 1px solid rgba(250,166,26,0.35);
+  border-radius: 16px;
+  padding: 2.2rem 1.8rem;
+  box-shadow: 0 10px 28px -12px rgba(0,0,0,0.45);
+  backdrop-filter: blur(6px) saturate(120%);
+  overflow: hidden;
+}
+.noticeboard-title { color: #FAA61A; letter-spacing: .03rem; margin: 0 0 1.4rem 0; text-align: center; }
+.notes-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.4rem; }
+.note-card {
+  grid-column: span 6;
+  background: rgba(255,255,255,0.14);
+  color: #fff;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.22);
+  padding: 1.4rem 1.4rem 1.6rem;
+  box-shadow: 0 10px 22px -12px rgba(0,0,0,0.45);
+  transform: rotate(-0.3deg);
+  position: relative;
+}
+.note-card:nth-child(2) { transform: rotate(0.2deg); }
+.note-card h4 { color: #FAA61A; margin-top: .6rem; margin-bottom: .8rem; }
+.note-card p, .note-card li { color: #f1f1f1; }
+.note-card a { color: #FAA61A; text-decoration: underline; }
+@media (max-width: 991.98px) { .note-card { grid-column: span 12; } }
+
 /*# sourceMappingURL=main.css.map */
