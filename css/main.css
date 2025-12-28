@@ -2794,6 +2794,11 @@ body.oxford-page {
     background-color: #FAA61A !important;
     color: white;
 }
+.badge-ht-term-2026 {
+    background-color: purple !important;
+    color: white;
+}
+
 
 /* Accordion Styling */
 .accordion {
