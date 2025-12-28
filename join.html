@@ -200,41 +200,63 @@
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "07ece4e9475a4cbb92f682afe5f07054"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 
-<footer class="site-footer">
+<footer class="site-footer" role="contentinfo">
     <div class="container">
         <!-- Logo centered at the top -->
         <div class="footer-logo-centered">
-            <a href="index.html">
+            <a href="index.html" aria-label="OSLA Homepage">
                 <img src="images/logo.svg" alt="OSLA Logo">
             </a>
         </div>
 
+        <!-- Social Media Links -->
         <div class="footer-social">
-            <ul>
-                <li><a href="https://www.instagram.com/oxuniliberals/"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/oxford-university-liberal-democrats"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://x.com/oxunilibdems/"><i class="custom-x-icon"></i></a></li>
+            <ul role="list" aria-label="Social Media Links">
+                <li><a href="https://www.instagram.com/oxuniliberals/" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/oxford-university-liberal-democrats" aria-label="Connect on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li><a href="https://x.com/oxunilibdems/" aria-label="Follow us on X (Twitter)"><i class="custom-x-icon" aria-hidden="true"></i></a></li>
             </ul>
         </div>
-        
-        <!-- Blob-style scattered quick links -->
-        <div class="footer-quicklinks-blob">
-            <a href="index.html">Home</a>
-            <a href="join.html">Join</a>
-            <a href="documents.html">Documents</a>
-            <a href="https://oxuniliberals.com/blog">Blog</a>
-            <a href="committee.html">Committee</a>
-            <a href="events.html">Events</a>
-            <a href="alumni.html">Alumni</a>
-            <a href="about.html">About</a>
-            <a href="donate.html">Donate</a>
-            <a href="mailing-list.html">Mailing List</a>
-            <a href="contact.html">Contact</a>
-        </div>
+
+        <!-- Navigation Links -->
+        <nav class="footer-navigation" aria-label="Footer Navigation">
+            <div class="footer-nav-grid">
+                <div class="footer-nav-section">
+                    <h3 class="footer-nav-heading">About OSLA</h3>
+                    <ul role="list">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="committee.html">Committee</a></li>
+                        <li><a href="alumni.html">Alumni</a></li>
+                        <li><a href="documents.html">Documents</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-section">
+                    <h3 class="footer-nav-heading">Get Involved</h3>
+                    <ul role="list">
+                        <li><a href="join.html">Join OSLA</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="mailing-list.html">Mailing List</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-section">
+                    <h3 class="footer-nav-heading">Resources</h3>
+                    <ul role="list">
+                        <li><a href="https://oxuniliberals.com/blog">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Footer Bottom -->
         <div class="footer-bottom">
             <div class="footer-bottom-content">
-                <p>Copyright MMXXV - The Oxford Students Liberal Association (OSLA) - Liberal since 1913</p>
-                <a href="https://www.haydenwilliams.dev/">Website by Hayden Williams</a>
+                <p>&copy; MMXXV The Oxford Students Liberal Association (OSLA) &mdash; Liberal since 1913</p>
+                <a href="https://www.haydenwilliams.dev/" rel="noopener noreferrer" target="_blank">Website by Hayden Williams</a>
             </div>
         </div>
     </div>

@@ -4063,101 +4063,7 @@ body.oxford-page {
 }
 
 /* Footer logo centered */
-.footer-logo-centered {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.footer-logo-centered img {
-  max-width: 400px;
-  height: auto;
-}
-
-/* Professional quick links with subtle creative layout */
-.footer-quicklinks-blob {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1rem 0 2.5rem;
-  max-width: 800px;
-  margin: 0 auto 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-quicklinks-blob a {
-  color: #ffffff;
-  text-decoration: none;
-  font-family: "EB Garamond", sans-serif;
-  font-size: 1.7rem;
-  padding: 0.5rem 1.2rem;
-  margin: 0.5rem 0.8rem;
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-/* Subtle offset pattern for visual interest without being messy */
-.footer-quicklinks-blob a:nth-child(3n) {
-  position: relative;
-  top: 4px;
-}
-
-.footer-quicklinks-blob a:nth-child(3n+1) {
-  position: relative;
-  top: -4px;
-}
-
-.footer-quicklinks-blob a:hover {
-  color: #FAA61A;
-  transform: translateY(-2px);
-}
-
-/* Clean underline effect on hover */
-.footer-quicklinks-blob a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: 0;
-  left: 50%;
-  background-color: #FAA61A;
-  transition: all 0.3s ease;
-}
-
-.footer-quicklinks-blob a:hover::after {
-  width: 80%;
-  left: 10%;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .footer-quicklinks-blob {
-    max-width: 100%;
-  }
-  
-  .footer-quicklinks-blob a {
-    font-size: 1.5rem;
-    padding: 0.4rem 1rem;
-    margin: 0.4rem 0.6rem;
-  }
-  
-  /* Reduce the offset on mobile for better appearance */
-  .footer-quicklinks-blob a:nth-child(3n),
-  .footer-quicklinks-blob a:nth-child(3n+1) {
-    top: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-logo-centered {
-    margin-bottom: 2rem;
-  }
-
-  .footer-quicklinks-blob a {
-    font-size: 1.3rem;
-    padding: 0.3rem 0.8rem;
-    margin: 0.3rem 0.5rem;
-  }
-}
+/* Removed old blob-style footer navigation - replaced with professional grid layout below */
 
 /* Footer logo centered */
 .footer-logo-centered {
@@ -4170,80 +4076,160 @@ body.oxford-page {
   height: auto;
 }
 
-/* Clean grid-style footer navigation with multiple rows */
-.footer-quicklinks-blob {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  max-width: 800px;
-  margin: 0 auto 2rem;
-  padding: 1.5rem 0 2.5rem;
+/* ===================================================================
+ * Footer Navigation - Professional Grid Layout
+ * ------------------------------------------------------------------- */
+
+/* Footer Navigation Container */
+.footer-navigation {
+  padding: 2rem 0;
+  margin-bottom: 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  gap: 0.5rem;
-  text-align: center;
 }
 
-.footer-quicklinks-blob a {
+/* Navigation Grid - 3 Columns on Desktop */
+.footer-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Individual Navigation Sections */
+.footer-nav-section {
+  text-align: left;
+}
+
+/* Section Headings */
+.footer-nav-heading {
+  color: #FAA61A;
+  font-family: "EB Garamond", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(250, 166, 26, 0.3);
+}
+
+/* Navigation Lists */
+.footer-nav-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav-section li {
+  margin-bottom: 0.8rem;
+}
+
+/* Navigation Links */
+.footer-nav-section a {
   color: #ffffff;
   text-decoration: none;
   font-family: "EB Garamond", sans-serif;
-  font-size: 1.7rem;
-  padding: 0.6rem 1.2rem;
-  margin: 0.3rem;
-  border-radius: 4px;
-  background-color: rgba(250, 166, 26, 0.05);
+  font-size: 1.5rem;
   transition: all 0.3s ease;
   display: inline-block;
-  width: calc(20% - 0.6rem); /* 5 links per row */
+  position: relative;
+  padding-left: 0;
 }
 
-.footer-quicklinks-blob a:hover {
+/* Hover Effect - Slide and Color Change */
+.footer-nav-section a:hover {
   color: #FAA61A;
-  background-color: rgba(250, 166, 26, 0.15);
-  transform: translateY(-2px);
+  padding-left: 0.5rem;
 }
 
-/* Underline effect on hover */
-.footer-quicklinks-blob a::after {
+/* Subtle Underline on Hover */
+.footer-nav-section a::after {
   content: '';
   position: absolute;
   width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 50%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
   background-color: #FAA61A;
-  transition: all 0.3s ease;
+  transition: width 0.3s ease;
 }
 
-.footer-quicklinks-blob a:hover::after {
-  width: 80%;
-  left: 10%;
+.footer-nav-section a:hover::after {
+  width: 100%;
 }
 
-/* Responsive adjustments */
+/* Tablet Layout - 2 Columns */
 @media (max-width: 768px) {
-  .footer-quicklinks-blob {
-    max-width: 100%;
+  .footer-nav-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    padding: 0 1.5rem;
   }
-  
-  .footer-quicklinks-blob a {
-    width: calc(33.333% - 0.6rem); /* 3 links per row on medium screens */
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-  }
-}
 
-@media (max-width: 480px) {
+  .footer-nav-heading {
+    font-size: 1.6rem;
+  }
+
+  .footer-nav-section a {
+    font-size: 1.4rem;
+  }
+
   .footer-logo-centered {
     margin-bottom: 2rem;
   }
 
-  .footer-quicklinks-blob a {
-    width: calc(50% - 0.6rem); /* 2 links per row on small screens */
+  .footer-logo-centered img {
+    max-width: 280px;
+  }
+}
+
+/* Mobile Layout - Single Column */
+@media (max-width: 480px) {
+  .footer-nav-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .footer-nav-section {
+    text-align: center;
+  }
+
+  .footer-nav-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-nav-section a {
     font-size: 1.3rem;
-    padding: 0.4rem 0.8rem;
-    margin: 0.25rem;
+  }
+
+  /* Center align hover effects on mobile */
+  .footer-nav-section a:hover {
+    padding-left: 0;
+  }
+
+  .footer-logo-centered img {
+    max-width: 220px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .footer-navigation {
+    padding: 1.5rem 0;
+  }
+
+  .footer-nav-grid {
+    gap: 1.5rem;
+  }
+
+  .footer-nav-heading {
+    font-size: 1.4rem;
+  }
+
+  .footer-nav-section a {
+    font-size: 1.2rem;
   }
 }
 .accessibility-panel {
