@@ -3626,6 +3626,7 @@ body.oxford-page {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 0;
+    --timeline-progress: 0%;
 }
 
 .timeline-enhanced::before {
@@ -3637,6 +3638,26 @@ body.oxford-page {
     bottom: 0;
     left: 50%;
     margin-left: -2px;
+    box-shadow: 0 0 10px rgba(250, 166, 26, 0.5);
+}
+
+/* Animated gradient effect on timeline line */
+.timeline-enhanced::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    background: linear-gradient(to bottom, 
+        rgba(255, 221, 68, 0.8), 
+        rgba(250, 166, 26, 0.8),
+        transparent);
+    top: 0;
+    height: var(--timeline-progress, 0%);
+    left: 50%;
+    margin-left: -4px;
+    transition: height 0.3s ease;
+    box-shadow: 0 0 20px rgba(255, 221, 68, 0.8);
+    filter: blur(2px);
+    pointer-events: none;
 }
 
 .timeline-item {
@@ -3668,6 +3689,31 @@ body.oxford-page {
     color: #000;
     font-size: 1rem;
     z-index: 2;
+    box-shadow: 0 4px 15px rgba(250, 166, 26, 0.4);
+    transition: all 0.3s ease;
+}
+
+/* Pulsing animation for timeline markers */
+.timeline-marker-animate {
+    animation: markerPulse 2s ease-in-out infinite;
+}
+
+@keyframes markerPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(250, 166, 26, 0.4);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 8px 30px rgba(255, 221, 68, 0.8);
+    }
+}
+
+/* Glow effect on hover */
+.timeline-marker:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 30px rgba(255, 221, 68, 0.9);
+    cursor: pointer;
 }
 .timeline-year {
     font-family: "EB Garamond", sans-serif;
@@ -3693,12 +3739,61 @@ body.oxford-page {
     padding: 2rem;
     position: relative;
     transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+/* Shimmer effect on card */
+.timeline-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.1) 50%,
+        transparent 70%
+    );
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+    opacity: 0;
+}
+
+.timeline-card:hover::before {
+    opacity: 1;
+    animation: shimmer 1.5s ease-in-out;
+}
+
+@keyframes shimmer {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 150%;
+    }
 }
 
 .timeline-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(250,166,26,0.3);
     border-color: #FFDD44;
+    background: rgba(250,166,26,0.15);
+}
+
+/* Active/clicked state for timeline cards */
+.timeline-card.timeline-active {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(250,166,26,0.5);
+    border-color: #FFDD44;
+    border-width: 3px;
+    background: rgba(250,166,26,0.2);
+}
+
+.timeline-card.timeline-active h3 {
+    color: #FFDD44;
+    text-shadow: 0 0 10px rgba(255, 221, 68, 0.5);
 }
 
 .timeline-card h3 {
@@ -3720,6 +3815,35 @@ body.oxford-page {
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon animation on card hover */
+.timeline-card:hover .timeline-icon {
+    transform: rotate(360deg) scale(1.2);
+    background: #FFDD44;
+    box-shadow: 0 4px 15px rgba(255, 221, 68, 0.6);
+}
+
+/* Bounce animation for icons */
+.timeline-card.timeline-active .timeline-icon {
+    animation: iconBounce 0.6s ease;
+}
+
+@keyframes iconBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    75% {
+        transform: translateY(-7px);
+    }
 }
 
 /* Socials Section Enhancement */
