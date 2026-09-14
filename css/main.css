@@ -4366,46 +4366,46 @@ body.oxford-page {
   }
 }
 .accessibility-panel {
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .accessibility-container {
   background: linear-gradient(135deg, rgba(250,166,26,0.15) 0%, rgba(250,166,26,0.25) 100%);
-  border: 3px solid #FAA61A;
-  border-radius: 15px;
+  border: 2px solid #FAA61A;
+  border-radius: 12px;
   position: relative;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .accessibility-icon {
-  font-size: 2.8rem;
+  font-size: 2rem;
   color: #FAA61A;
 }
 
 .accessibility-title {
-  font-size: 2.8rem;
+  font-size: 2rem;
   color: #FAA61A;
   font-weight: 600;
   font-family: "EB Garamond", sans-serif;
 }
 
 .accessibility-text {
-  font-size: 1.8rem;
-  line-height: 1.7;
+  font-size: 1.2rem;
+  line-height: 1.5;
   color: #ffffff;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .btn-accessibility {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 0.7rem 1.4rem;
   background-color: #FAA61A;
   color: #000000;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 8px;
   transition: all 0.3s ease;
   font-family: "EB Garamond", sans-serif;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -4428,21 +4428,21 @@ body.oxford-page {
 /* Mobile responsive adjustments */
 @media (max-width: 767px) {
   .accessibility-icon {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
   
   .accessibility-title {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
   
   .accessibility-text {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
   }
   
   .btn-accessibility {
     width: 100%;
-    padding: 1rem 1rem;
-    font-size: 1.6rem;
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
   }
 }
 
