@@ -2470,6 +2470,14 @@ body.oxford-page {
   color: #FAA61A; /* Ensure all text is the specified colour */
 }
 
+.navbar .nav-link {
+    font-size: 2.4rem;
+}
+
+.navbar .join-us {
+    font-size: 2.6rem;
+}
+
 .site-footer {
   background-color: #000000;
   color: #ffffff;
@@ -4588,6 +4596,26 @@ body.oxford-page {
     pointer-events: none;
 }
 
+/* Mailing List Section Improvements */
+.partners-section {
+    background: linear-gradient(135deg, rgba(0,0,0,0.92) 0%, rgba(17,17,17,0.65) 100%), 
+                url('../images/lincoln-college-img.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.partners-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(250,166,26,0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
 /* Alumni Historical Association Names Section Improvements */
 .alumni-historicalnames-section {
     background: linear-gradient(135deg, rgba(0,0,0,0.92) 0%, rgba(17,17,17,0.65) 100%), 
@@ -4618,6 +4646,26 @@ body.oxford-page {
 }
 
 .alumni-reachout-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(250,166,26,0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Officer List Section Improvements */
+.officer-list-section {
+    background: linear-gradient(135deg, rgba(0,0,0,0.92) 0%, rgba(17,17,17,0.65) 100%), 
+                url('../images/Oxford-University_All-Souls-College.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.officer-list-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -4972,4 +5020,29 @@ body.oxford-page {
 
 @media (max-width: 480px) {
   .banner-cta { width: 100%; text-align: center; }
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #FAA61A;
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2.5rem;
+    transition: 0.3s ease;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contact-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.officers-list {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
 }
